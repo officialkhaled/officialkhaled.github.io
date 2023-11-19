@@ -130,5 +130,5 @@ function takeToIndex() {
 }
 
 function takeToPublicIndex() {
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 }
