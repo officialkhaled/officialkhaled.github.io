@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>Main Course Recipes</title>
+    <!-- styling for navbar -->
+    <style>
+      :root {
+        --main: #0c356a;
+        --light: #0174be;
+        --accent: #fff0ce;
+        --yellow: #ffc436;
+        --text: #1d1d1d;
+      }
+
+      .navbar {
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        padding: 0 100px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 20px 20px;
+      }
+
+      .navbar-h {
+        margin-top: 40px;
+      }
+
+      .navbar-list ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navbar-list ul li {
+        margin-left: 50px;
+      }
+
+      .navbar-list ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 700;
+        display: block;
+      }
+
+      .navbar ul li a:hover {
+        text-decoration: none;
+        color: var(--light);
+      }
+
+      .navbar-list ul li button {
+        background-color: var(--main);
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .navbar-list ul li button:hover {
+        background-color: var(--light);
+      }
+
+      .navbar-list ul li button a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-list ul li button a:hover {
+        color: #fff;
+      }
+
+      .scroll {
+        background: #fff;
+        top: -100px;
+        border-radius: 20px;
+        width: 90%;
+        animation: fadedown 0.4s ease 0.75s forwards;
+      }
+
+      .navbar-brand {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      @keyframes fadedown {
+        0% {
+          top: -100px;
+        }
+        100% {
+          top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="../../assets/img/logo/logo-1.png" alt="" width="80px" />
+      </div>
+
+      <div class="navbar-list">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li>
+            <button>
+              <a style="color: #fff" href="../index.html">Logout</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BODY -->
+    <main class="container recipe-container">
+      <div class="recipe-head">
+        <article>
+          <h2>Main Course Recipes</h2>
+          <p>
+            Scroll down to view the recipes or click the dropdown menu to see
+            other categories
+          </p>
+          <details role="list">
+            <summary aria-haspopup="listbox">Main Course</summary>
+            <ul role="listbox">
+              <li><a href="recipes.html">Starter</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="cake.html">Cake</a></li>
+              <li><a href="noodles.html">Noodles</a></li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <!-- RECIPE 1 -->
+      <div class="recipes hidden">
+        <img src="../../assets/img/recipes/kabsa.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Meat and Rice Kabsa</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          <b>Kabsa:</b>
+          Vegetable oil, 2 onions (250 grams), Cinnamon stick, Cardamom, Cloves,
+          Bay leaves, Dried lime, 6 cloves of Garlic (20 grams), Lamb/Goat meat
+          (1 kilogram), 1 tbsp Cumin, 1 tbsp Coriander, 1 tbsp Paprika, 1 tsp
+          Black pepper, 1 tsp Turmeric, 2 tbsp Tomato paste (30 grams), 3
+          tomatoes (250 grams), Basmati rice (2 cups, washed and soaked for 30
+          minutes), Salt (1 tbsp or to taste), Hot peppers and Bell peppers and
+          3 cups Chicken broth
+
+          <br />
+
+          <b>Daqoos/Sahawik:</b>
+          2 Tomatoes (200 grams), Garlic (2 grams), Hot pepper, Coriander (3
+          grams), 1/4 tsp Cumin, Salt and 1 tbsp Lemon juice
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          <b>Kabsa:</b>
+
+          <br />
+
+          1. Heat a pot with a bit of vegetable oil. <br />
+          2. Add and sauté: Chopped onions, cinnamon stick, cardamom, cloves,
+          bay leaves, dried lime, and garlic. Cook until the onions caramelize.
+          <br />
+          3. Add the lamb or goat meat. Season with cumin, coriander, paprika,
+          black pepper, and turmeric. Cook for about 5 minutes. <br />
+          4. Stir in tomato paste and diced tomatoes. Cover the pot and let the
+          tomatoes cook for 5 minutes. <br />
+          5. Pour hot water into the pot until the meat is covered. Cook over
+          medium heat for around 1 hour or until the meat is fully cooked.
+          <br />
+          6. Remove the meat from the broth, strain the broth, and return the
+          meat to the pot. <br />
+          7. Add washed and soaked basmati rice, salt, hot peppers, bell
+          peppers, and chicken broth. Cook over high heat until the liquid
+          reduces. <br />
+          8. Reduce the heat to low and let it simmer for another 25 minutes or
+          until the rice is cooked through.
+
+          <br />
+          <br />
+
+          <b>Daqoos/Sahawik (Fresh Tomato Sauce):</b>
+
+          <br />
+
+          1. Blend tomatoes, garlic, hot pepper, coriander, cumin, salt, and
+          lemon juice in a food processor until smooth. <br />
+          2. Refrigerate the sauce until serving time.
+
+          <br />
+          <small>
+            <center>
+              Enjoy your Kabsa with the fresh tomato sauce on the side!
+            </center>
+          </small>
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/ZMsO1x7tLGE?si=bfG1oS7gxe5vkDHO"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 2 -->
+      <div class="recipes hidden">
+        <img src="../../assets/img/recipes/chicken-biryani-.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Chicken Biryani</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+          <br />
+          3 large Red onions (sliced thin), 200ml Peanut oil, 1 kg Chicken
+          thighs (skin off), 4 tbsp Yogurt, 1 tsp Chilli powder, 1/2 tsp Ground
+          turmeric, 1 tsp Garam masala, 3 tsp Ginger paste, 1 tsp Garlic paste,
+          Juice of 1 Lemon, 2 green chillies, 2 Cinnamon sticks, 12 Cardamom
+          pod, 2 tsp Cumin seeds, 6 Cloves, Salt to taste, 1 Bunch mint, 1 Bunch
+          coriander and 1 kg Aged basmati rice
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Start by making the crispy onions by heating up the oil in a
+          saucepan over a medium high heat and frying the sliced onions in
+          batches until golden brown. <br />
+          2. Next, marinate your chicken by adding the chicken, 1/3 of the
+          crispy onions, yoghurt, chilli powder, turmeric, garam masala, ginger,
+          garlic, one cinnamon stick, 8 cardamon pods, 1 green chilli sliced
+          thin, 1 tsp cumin seeds, 4 cloves and a tsp of salt in a large pot.
+          Mix well and marinate for 4-24 hours. <br />
+          3. With the rice, rinse it twice then soak it in water for 40 minutes.
+          <br />
+          4. In a large pot, half filled with water, add 1 tbsp salt, 1 green
+          chilli sliced lengthways in half, 6 green cardamon, 1 cinnamon stick,
+          2 cloves and 1 tsp cumin seeds and bring to a simmer. <br />
+          5. Add the soaked rice to the simmering water, stir once and cook for
+          6-8 minutes or until its just cooked. You still want a bit of bite in
+          the rice. <br />
+          6. Remove the rice from the water and set aside. <br />
+          7. Place the marinated chicken onto a high heat and cook for 6-7
+          minutes, stirring every 1-2 minutes. <br />
+          8. Remove half of the chicken, then sprinkle half of the rice on the
+          chicken in the pot. <br />
+          9. Next, add a layer of the crispy onions, some mint and coriander.
+          <br />
+          10. Place the rest of the chicken and repeat with the rice, crispy
+          onions and herbs. <br />
+          11. Place a clean tea towel over the lid of the pot and cover the
+          biryani. <br />
+          12. Turn your element to medium high for 10 minutes, then turn it down
+          to very low for 30 minutes. Take from the heat and let it rest for 20
+          minutes before taking the lid off and serving.
+
+          <br />
+          <small> <center>Enjoy!</center></small>
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/6XlMguO9r-M?si=sRCG6SSGv9TCpg6B"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 3 -->
+      <div class="recipes hidden">
+        <img src="../../assets/img/recipes/fried egg.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Spicy Egg Fried Rice</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          5-6 Green onions, 6 Cloves of garlic, 1-2 tbsp Crushed chilli flakes
+          (add based on spice tolerance), 2 Servings cold rice 2 Eggs and
+          Cooking oil as needed
+
+          <br />
+          <b>Sauce:</b>
+          1 tbsp Light/regular soy sauce, 1 tbsp Dark soy sauce, 1 tbsp Water
+          and 1 tsp Sugar
+          <small>Note: Add salt if needed</small>
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Clean and trim 5-6 green onions. Mince the white parts and thinly
+          slice the green parts for garnish. <br />
+          2. Mince 6 cloves of garlic. Add more or less depending on size of the
+          cloves or taste. <br />
+          3. Take 2 servings of cold, day old rice in a bowl and separate the
+          clumps. This helps in even stir frying. Cold, slightly dried out rice
+          is essential for the perfect fried rice texture. <br />
+          4. Mix the sauce ingredients in a bowl and set aside. <br />
+          5. To a heated wok/pan add some oil and scramble 2 eggs with a pinch
+          of salt. Set aside. <br />
+          6. Set flame to medium and add 2 tbsp neutral cooking oil. When the
+          oil is hot, sauté the garlic and green onion for 30 seconds. <br />
+          7. Reduce flame to low and sauté 1-2 tbsp crushed red chilli flakes
+          for 30 seconds or until fragrant. Chilli flakes will burn if the flame
+          is too high. <br />
+          8. Increase flame to medium high, add rice and stir fry until mixed
+          well with the aromatics. <br />
+          9. Add the prepared sauce and stir fry for 2-3 minutes. The rice needs
+          to fry well so keep tossing and turning. <br />
+          10. When the rice is fried well, add the previously scrambled eggs.
+          Mix everything well and adjust salt if needed. <br />
+          11. Add the green part of green onions and switch off the flame. You
+          don’t want to overcook them. <br />
+          12. Serve the spicy egg fried rice with a crispy fried egg, a side of
+          your choice or on its own
+        </p>
+
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/gwk3gM05zsQ?si=Ore1E7TMQGiPtihb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <footer class="container">
+        <small class="container text">
+          <center>© 2023 FlavorVerse. All rights reserved.</center>
+        </small>
+      </footer>
+    </div>
+
+    <script defer src="../../assets/js/scroll.js"></script>
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>

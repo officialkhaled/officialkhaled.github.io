@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>Noodles Recipes</title>
+    <!-- styling for navbar -->
+    <style>
+      :root {
+        --main: #0c356a;
+        --light: #0174be;
+        --accent: #fff0ce;
+        --yellow: #ffc436;
+        --text: #1d1d1d;
+      }
+
+      .navbar {
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        padding: 0 100px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 20px 20px;
+      }
+
+      .navbar-h {
+        margin-top: 40px;
+      }
+
+      .navbar-list ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navbar-list ul li {
+        margin-left: 50px;
+      }
+
+      .navbar-list ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 700;
+        display: block;
+      }
+
+      .navbar ul li a:hover {
+        text-decoration: none;
+        color: var(--light);
+      }
+
+      .navbar-list ul li button {
+        background-color: var(--main);
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .navbar-list ul li button:hover {
+        background-color: var(--light);
+      }
+
+      .navbar-list ul li button a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-list ul li button a:hover {
+        color: #fff;
+      }
+
+      .scroll {
+        background: #fff;
+        top: -100px;
+        border-radius: 20px;
+        width: 90%;
+        animation: fadedown 0.4s ease 0.75s forwards;
+      }
+
+      .navbar-brand {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      @keyframes fadedown {
+        0% {
+          top: -100px;
+        }
+        100% {
+          top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="../../assets/img/logo/logo-1.png" alt="" width="80px" />
+      </div>
+
+      <div class="navbar-list">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li>
+            <button>
+              <a style="color: #fff" href="../index.html">Logout</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BODY -->
+    <main class="container recipe-container">
+      <div class="recipe-head">
+        <article>
+          <h2>Noodles Recipes</h2>
+          <p>
+            Scroll down to view the recipes or click the dropdown menu to see
+            other categories
+          </p>
+          <details role="list">
+            <summary aria-haspopup="listbox">Noodles</summary>
+            <ul role="listbox">
+              <li><a href="recipes.html">Starter</a></li>
+              <li><a href="maincourse.html">Main course</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="cake.html">Cake</a></li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <!-- RECIPE 1 -->
+      <div class="recipes hidden">
+        <img src="../../assets/img/recipes/chicken-ramen.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Spicy Chicken Ramen</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+          <br />
+          Korean Instant Ramyun, Chicken thighs 150-200g, Green onion, 30g of
+          Garlic, 10g Butter, 1 Egg and 1 tbsp of Korean Red pepper powder
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Melt butter in a pot, sauté garlic. Add chicken, cook until
+          browned.
+          <br />
+          2. Prepare Korean Instant Ramyun.
+          <br />
+          3. Add Korean Red pepper powder to the chicken pot.
+          <br />
+          4. Pour cooked ramyun into the pot. Crack an egg, stir until cooked.
+          <br />
+          5. Garnish with green onions and serve hot.
+          <br />
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/rzZAnJv6QGw?si=x2hzSg8p_brfnmq1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 2 -->
+      <div class="recipes hidden">
+        <img
+          src="../../assets/img/recipes/tomato-spaghetti.jpg
+        "
+          alt=""
+        />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Classic Tomato Spaghetti</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          Spaghetti, 4-6 Tomatoes, 1 tbsp Oil, 1 tbsp Finely Chopped Garlic, 2
+          tsp Red Chili Flakes, 1 Finely Chopped Onion, Finely Chopped
+          Capsicum,• Finely Chopped Carrot, 1/2 tsp Salt, 1 tsp Red Chili
+          Powder, 1/2 tsp Black Pepper Powder, 1 tsp Mixed Herbs Seasoning,
+          Basil Leaves, Sugar, Tomato Ketchup (Optional) and Fresh Cream/Fresh
+          Cheese
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Bring a pot of water to a boil. Score a small 'X' on the bottom of
+          each tomato. Plunge them into boiling water for a minute, then
+          transfer to a bowl of ice water. Peel off the skin, chop, and set
+          aside.
+          <br />
+          2. In a separate pot, bring salted water to a boil. Cook the spaghetti
+          according to the package instructions. Drain and set aside. <br />3.
+          Heat oil in a pan. Add chopped garlic and red chili flakes. Sauté for
+          a minute. <br />4. Add chopped onion, capsicum, and carrot. Sauté
+          until they soften. <br />5. Stir in the chopped tomatoes and cook
+          until they break down and form a sauce-like consistency. <br />6.
+          Season with salt, red chili powder, black pepper, mixed herbs
+          seasoning, and torn basil leaves. Add a pinch of sugar to balance the
+          acidity. <br />7. If desired, add a spoonful of tomato ketchup for
+          added sweetness and depth. <br />
+          8. Finish with a swirl of fresh cream or crumbled fresh cheese for a
+          creamy richness. <br />
+          9. Toss the cooked spaghetti in the sauce. Allow them to blend and
+          absorb the flavors for a minute or two over low heat.
+          <br />
+
+          <small>
+            <center>
+              Adjust the spice levels and seasoning according to your taste and
+              enjoy!
+            </center></small
+          >
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/VKizSq2_ZNs?si=1nxRl06OaRvTNQDg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <footer class="container">
+        <small class="container text">
+          <center>© 2023 FlavorVerse. All rights reserved.</center>
+        </small>
+      </footer>
+    </div>
+
+    <script defer src="../../assets/js/scroll.js"></script>
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>

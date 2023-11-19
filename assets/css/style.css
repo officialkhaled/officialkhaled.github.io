@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Gabarito:wght@400;700&family=Lora:wght@400;500;700&family=Merriweather:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;700&display=swap");
+
+:root {
+  --main: #0c356a;
+  --light: #0174be;
+  --accent: #fdf8ee;
+  --yellow: #ffbf28;
+  --text: #1d1d1d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #ffead9 5%, #ffd4b1 35%, #ffbf8b 100%);
+}
+
+.footer {
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 18px;
+  text-wrap: balance;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1rem;
+  text-wrap: balance;
+  margin-top: -10px;
+}
+
+.text {
+  font-weight: 700;
+  color: var(--main);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--light);
+}
+
+article {
+  max-height: 500px;
+  border-radius: 15px;
+}
+
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.hero-section {
+  background: url("../../assets/img/hero-section-4-test.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h3 {
+  font-family: "Lora", serif;
+  color: #fff;
+  font-size: 2.2rem;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: -30px;
+  padding-top: -50px;
+  padding-left: 5px;
+}
+
+.hero-search {
+  width: 100%;
+}
+
+.hero-search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #000;
+  margin-top: 190px;
+}
+
+.hero-search i {
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.hero-search button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--yellow);
+}
+
+.hero-search button {
+  transition: 1000ms;
+}
+
+.hero-search button:hover,
+.hero-search button:focus-visible {
+  transform: translateY(-0.75rem);
+  transition: 500ms;
+}
+
+.flex {
+  margin-top: 74px;
+}
+
+.mid-section {
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 0 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mid-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mid-img img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Recipe Page */
+.recipes {
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 0 20px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.recipes img {
+  width: 90%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding-left: 7px;
+}
+
+.recipes h3 {
+  color: var(--text);
+  padding-top: 10px;
+}
+
+.recipes p {
+  width: 90%;
+  color: var(--text);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.recipes img,
+.recipes h3,
+.recipes p {
+  margin: 0 auto;
+  margin-left: 40px;
+}
+
+.recipe-head h2,
+.recipe-head p {
+  color: var(--text);
+  margin: 0 auto;
+}
+
+.recipe-head h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe-head p {
+  margin-bottom: 20px;
+}
+
+.recipe-head {
+  margin-left: 110px;
+  width: 80%;
+}
+
+.recipe-container hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.video-box {
+  margin-top: -70px;
+  margin-bottom: -20px;
+  border-radius: 20px;
+}
+
+/* SCROLL ANIMATION */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.slide-2.show {
+  transition-delay: 400ms;
+}
+
+.slide-3.show {
+  transition-delay: 800ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.motion {
+  transition: 500ms;
+}
+
+.motion:hover,
+.motion:focus-visible {
+  transform: translateY(-1.5rem);
+  transition: 500ms;
+}

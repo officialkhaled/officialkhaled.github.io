@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Pizza Recipes</title>
+    <!-- styling for navbar -->
+    <style>
+      :root {
+        --main: #0c356a;
+        --light: #0174be;
+        --accent: #fff0ce;
+        --yellow: #ffc436;
+        --text: #1d1d1d;
+      }
+
+      .navbar {
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        padding: 0 100px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 20px 20px;
+      }
+
+      .navbar-h {
+        margin-top: 40px;
+      }
+
+      .navbar-list ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navbar-list ul li {
+        margin-left: 50px;
+      }
+
+      .navbar-list ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 700;
+        display: block;
+      }
+
+      .navbar ul li a:hover {
+        text-decoration: none;
+        color: var(--light);
+      }
+
+      .navbar-list ul li button {
+        background-color: var(--main);
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .navbar-list ul li button:hover {
+        background-color: var(--light);
+      }
+
+      .navbar-list ul li button a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-list ul li button a:hover {
+        color: #fff;
+      }
+
+      .scroll {
+        background: #fff;
+        top: -100px;
+        border-radius: 20px;
+        width: 90%;
+        animation: fadedown 0.4s ease 0.75s forwards;
+      }
+
+      .navbar-brand {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      @keyframes fadedown {
+        0% {
+          top: -100px;
+        }
+        100% {
+          top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="../assets/img/logo/logo-1.png" alt="" width="80px" />
+      </div>
+
+      <div class="navbar-list">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li>
+            <button><a href="login.html"> Login / Register</a></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BODY -->
+    <main class="container recipe-container">
+      <div class="recipe-head">
+        <article>
+          <h2>Pizza Recipes</h2>
+          <p>
+            Scroll down to view the recipes or click the dropdown menu to see
+            other categories
+          </p>
+          <details role="list">
+            <summary aria-haspopup="listbox">Pizza</summary>
+            <ul role="listbox">
+              <li><a href="recipes.html">Starter</a></li>
+              <li><a href="maincourse.html">Main course</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="cake.html">Cake</a></li>
+              <li><a href="noodles.html">Noodles</a></li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <!-- RECIPE 1 -->
+      <div class="recipes hidden">
+        <img
+          src="../assets/img/recipes/BBQ-Chicken-Pizza-one-slice.jpg"
+          alt=""
+        />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Chicken Pizza</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          <b>Pizza dough:</b>
+          3 cups all-purpose flour, 1 tsp sugar, 1/2 tsp salt, 1 tsp instant
+          yeast, 3 tbsp dry milk powder, 2 tbsp cooking oil and 1 cup lukewarm
+          water (or as required)
+
+          <br />
+
+          <b>Chicken topping:</b>
+          250g boneless chicken, cooked and shredded, 1 tsp garlic paste, 1 &
+          1/2 tsp red chili powder, 1 tsp oregano, 1/2 tsp mustard paste, 1 tsp
+          cumin powder, 1 tbsp yogurt, 1 tbsp lemon juice, 2-3 tbsp cooking oil,
+          Salt to taste and Pizza sauce
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          <b>Pizza dough:</b>
+
+          <br />
+
+          1. In a large bowl, combine the all-purpose flour, sugar, salt,
+          instant yeast, and dry milk powder. <br />
+          2. Add the cooking oil to the dry ingredients. <br />
+          3. Gradually add lukewarm water and knead the mixture until a soft
+          dough is formed. <br />
+          4. Place the dough in a greased bowl, cover it with a damp cloth, and
+          let it rise in a warm place for about 1-2 hours or until it doubles in
+          size. <br />
+          5. Once the dough has risen, punch it down and knead it on a floured
+          surface. <br />
+          6. Roll out the dough to your desired thickness.
+
+          <br />
+          <br />
+
+          <b>Chicken topping:</b>
+
+          <br />
+          1. In a pan, heat cooking oil and sauté garlic paste until it's
+          fragrant. <br />
+          2. Add shredded chicken to the pan and cook until it's no longer pink.
+          <br />
+          3. Add red chili powder, oregano, mustard paste, cumin powder, yogurt,
+          and salt. Mix well and cook for a few more minutes. <br />
+          4. Stir in lemon juice and cook until the chicken is fully cooked and
+          the flavors are well combined. <br />
+          5. Preheat your oven to the highest temperature it can go. <br />
+          6. Roll out the pizza dough and place it on a pizza pan. <br />
+          7. Spread pizza sauce over the dough and add the prepared chicken
+          topping. <br />
+          8. Bake in the preheated oven until the crust is golden and the
+          toppings are bubbly and slightly browned.
+        </p>
+
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/z6CmFx32k34?si=iyMmkpNTkcM_2GFw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 2 -->
+      <div class="recipes hidden">
+        <img src="../assets/img/recipes/pepperoni-pizza.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Pepperoni Pizza</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+          <br />
+
+          <b>Pizza dough: </b>
+
+          150g Bread flour, 3g Salt (1tsp flat), 6g Sugar (2tsp flat), 4g
+          Instant dry yeast (convexly 1tsp), 100ml Warm water and 10g Olive oil
+          (1tbsp)
+
+          <br />
+
+          <b>Tomato sauce:</b>
+
+          410g, 3Medium tomatoes, 1/3 Chopped onion, 1tbsp Minced garlic, 1tbsp
+          Oregano (can be omiited), 1tbsp Chopped basil (can be dried basil),
+          40g (4tbsp) Olive oil, 30g(3tbsp) Ketchup(can be omitted), 1-2pinches
+          of salt (optional), 1tsp Sugar (optional) and Black pepper
+
+          <br />
+
+          <b>Topping: </b>
+          210g Mozzarella cheese, Chopped onion, Green bell pepper, Sweet corn,
+          Pepperoni and Black olive
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Mix flour, salt, sugar, and yeast. Knead with water and olive oil
+          until smooth. Let it rise.
+          <br />
+          2. Sauté onion and garlic in olive oil. Add tomatoes, oregano, basil,
+          ketchup, salt, sugar, and black pepper. Simmer until thickened.
+          <br />
+          3. Roll out dough and preheat oven to 220°C (425°F).
+          <br />
+          4. Place dough on a pizza stone or baking sheet. Spread tomato sauce,
+          add mozzarella, and top with desired toppings.
+          <br />
+          5. Bake for 12-15 minutes until golden and bubbly.
+          <br />
+          6. Cool and slice into pieces.
+
+          <small> <center>Enjoy your homemade Pepperoni Pizza!</center></small>
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/jxVOPjOTKoo?si=AWwLT2ZtWXmfxeqn"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <footer class="container">
+        <small class="container text">
+          <center>© 2023 FlavorVerse. All rights reserved.</center>
+        </small>
+      </footer>
+    </div>
+
+    <script defer src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>

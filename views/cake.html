@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Cake Recipes</title>
+    <!-- styling for navbar -->
+    <style>
+      :root {
+        --main: #0c356a;
+        --light: #0174be;
+        --accent: #fff0ce;
+        --yellow: #ffc436;
+        --text: #1d1d1d;
+      }
+
+      .navbar {
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        padding: 0 100px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 20px 20px;
+      }
+
+      .navbar-h {
+        margin-top: 40px;
+      }
+
+      .navbar-list ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navbar-list ul li {
+        margin-left: 50px;
+      }
+
+      .navbar-list ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 700;
+        display: block;
+      }
+
+      .navbar ul li a:hover {
+        text-decoration: none;
+        color: var(--light);
+      }
+
+      .navbar-list ul li button {
+        background-color: var(--main);
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .navbar-list ul li button:hover {
+        background-color: var(--light);
+      }
+
+      .navbar-list ul li button a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar-list ul li button a:hover {
+        color: #fff;
+      }
+
+      .scroll {
+        background: #fff;
+        top: -100px;
+        border-radius: 20px;
+        width: 90%;
+        animation: fadedown 0.4s ease 0.75s forwards;
+      }
+
+      .navbar-brand {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      @keyframes fadedown {
+        0% {
+          top: -100px;
+        }
+        100% {
+          top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="../assets/img/logo/logo-1.png" alt="" width="80px" />
+      </div>
+
+      <div class="navbar-list">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li>
+            <button><a href="login.html"> Login / Register</a></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BODY -->
+    <main class="container recipe-container">
+      <div class="recipe-head">
+        <article>
+          <h2>Cake Recipes</h2>
+          <p>
+            Scroll down to view the recipes or click the dropdown menu to see
+            other categories
+          </p>
+          <details role="list">
+            <summary aria-haspopup="listbox">Cake</summary>
+            <ul role="listbox">
+              <li><a href="recipes.html">Starter</a></li>
+              <li><a href="maincourse.html">Main course</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="noodles.html">Noodles</a></li>
+            </ul>
+          </details>
+        </article>
+      </div>
+
+      <!-- RECIPE 1 -->
+      <div class="recipes hidden">
+        <img src="../assets/img/recipes/fluffy-cheesecake.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Cream Cheesecake</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          <b>Paste:</b>
+          150g Cream cheese, 25g Unsalted butter, 50ml Milk, 4 Egg yolks and 40g
+          Cake flour
+
+          <br />
+
+          <b>Meringue:</b>
+          4 Egg whites, 60g Sugar and 8g Lemon juice
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Preheat oven to 320°F (160°C), grease and line a 15cm diameter, 7cm
+          high cake mold. <br />
+          2. Melt cream cheese, butter, and milk. Add egg yolks, then sift in
+          cake flour. Set aside. <br />
+          3. Whip egg whites, add sugar and lemon juice until stiff peaks form.
+          <br />
+          4. Gently fold meringue into the cream cheese paste. <br />
+          5. Pour batter into the mold, tap to remove air bubbles. <br />
+          6. Bake for 45-50 minutes until golden brown. <br />
+          7. Cool, then serve dusted with powdered sugar if desired.
+
+          <small>
+            <center>Enjoy!</center>
+          </small>
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/-zys37bXITE?si=sRWQvCxWbK68heA7"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 2 -->
+      <div class="recipes hidden">
+        <img src="../assets/img/recipes/mini-cake.png" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Pumpkin Mini Cakes</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+          <br />
+
+          <b>Pumpkin cream (mousse):</b>
+          200g Sweet pumpkin, 20g (2Tbsp) Allulose (or sugar), 10g Room
+          temperature unsalted butter and 20g (4Tbsp) whipped cream
+          <br />
+
+          <b>Whipped cream: </b>
+          150ml Heavy cream and 10g (1Tbsp) Sugar
+
+          <br />
+
+          <b>Other: </b>
+          Castella, Sliced cheese (any white) and Seaweed
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Cook and mash sweet pumpkin. Mix with Allulose, then blend in
+          butter. Cool and fold in whipped cream.
+          <br />
+          2. Whip heavy cream until soft peaks form. Gradually add sugar, whip
+          until stiff peaks.
+          <br />
+          3. Cut Castella into 6cm rounds. Place cheese on Castella, add pumpkin
+          cream, then whipped cream.
+          <br />
+          4. Cut seaweed for Halloween decorations. Garnish the mini cakes.
+          <br />
+          5. Chill for at least an hour.
+          <br />
+
+          <small>
+            <center>
+              Enjoy your Halloween-themed Pumpkin Mini Cakes!
+            </center></small
+          >
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/OUVaY5r5goU?si=WvDP8HsqRth_xM9T"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+
+      <hr />
+
+      <!-- RECIPE 3 -->
+      <div class="recipes hidden">
+        <img src="../assets/img/recipes/swiss-cake.jpg" alt="" />
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          <center>Swiss Roll Cake</center>
+        </h3>
+        <p style="padding-left: 10px">
+          <b style="font-size: 24px; text-decoration: underline"
+            >Ingredients:</b
+          >
+
+          <br />
+
+          5 Egg yolks, 1g Salt, 50g Sugar, 90g Cake flour, 2g Baking powder, 50g
+          Vegetable oil, 50g Milk, 5 Egg whites and 70g Sugar
+
+          <br />
+          <br />
+
+          <b style="font-size: 24px; text-decoration: underline"
+            >Instructions:</b
+          >
+
+          <br />
+
+          1. Preheat Oven at 350°F (180°C), line a baking sheet with parchment
+          paper. <br />
+          2. Whisk yolks, salt, sugar; sift in flour and baking powder. Add oil
+          and milk, mix. <br />
+          3. Beat egg whites with sugar until stiff peaks form. <br />
+          4. Gently fold meringue into batter. <br />
+          5. Spread batter on the baking sheet; bake for 15-18 mins. <br />
+          6. Roll the warm cake with parchment paper; cool completely. <br />
+          7. Unroll, add filling, and roll again. <br />
+          8. Wrap in plastic; refrigerate for 30 mins. <br />
+          9. Slice and enjoy your Swiss Roll Cake!
+        </p>
+        <center>
+          <div class="recipes">
+            <iframe
+              style="margin-left: -45px"
+              width="859 px"
+              height="483 px"
+              class="video-box"
+              src="https://www.youtube.com/embed/-6oKEiI6_N0?si=FkaaTA23N4aZablr"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              >
+            </iframe>
+          </div>
+        </center>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <footer class="container">
+        <small class="container text">
+          <center>© 2023 FlavorVerse. All rights reserved.</center>
+        </small>
+      </footer>
+    </div>
+
+    <script defer src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>

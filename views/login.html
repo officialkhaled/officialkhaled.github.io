@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/authentication.css" />
+    <title>Login</title>
+    <style>
+      .home-container {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home-container button {
+        background-color: #0c356a;
+        color: #fff;
+        border: none;
+        width: 20%;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .home-container button a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .home-container button:hover {
+        background-color: #0174be;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="home-container">
+      <button><a href="index.html">HOME</a></button>
+    </div>
+ -->
+    <div class="form-container">
+      <form
+        action=""
+        method="post"
+        id="login-form"
+        onsubmit="return validateLoginForm()"
+        onkeyup="validateRegistrationForm()"
+        enctype="multipart/form-data"
+        onclick=""
+      >
+        <h3>Login</h3>
+
+        <input
+          type="username"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          class="text-field"
+        />
+        <span id="unameMsg" class="err-text"></span>
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          class="text-field"
+        />
+        <span id="passMsg" class="err-text"></span>
+
+        <div id="showPass-card">
+          <input
+            type="checkbox"
+            id="showPass"
+            onchange="return SHPassword(this)"
+            value="Show Password"
+          /><span id="showhidepwd">Show Password</span>
+        </div>
+
+        <input
+          type="button"
+          onclick="takeToIndex()"
+          name="submit"
+          value="LOGIN"
+          class="form-btn"
+        />
+        <p>
+          Don't have an account?
+          <a id="link-color" href="register.html">Register now</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="../assets/js/authentication.js"></script>
+  </body>
+</html>
