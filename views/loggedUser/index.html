@@ -117,13 +117,13 @@
 
       <div class="navbar-list">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="recipes.html">Recipes</a></li>
           <li><a href="aboutUs.html">About Us</a></li>
           <li>
             <button>
-              <a style="color: #fff" href="../../index.html">Logout</a>
+              <a style="color: #fff" href="../index.html">Logout</a>
             </button>
           </li>
         </ul>
@@ -133,7 +133,10 @@
     <!-- BODY -->
     <div>
       <div class="hero-section">
-        <h3 class="container hero-head">Culinary Adventures Begin Here</h3>
+        <h3 class="container hero-head">
+          Spice up your cooking,
+          <span class="auto-type">effortlessly</span>
+        </h3>
         <p class="container hero-slogan">
           Explore, Savor the Flavor, Share the Love!
         </p>
@@ -259,5 +262,15 @@
 
     <script defer src="../../assets/js/scroll.js"></script>
     <script src="../../assets/js/index.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["effortlessly", "seamlessly", "gracefully"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

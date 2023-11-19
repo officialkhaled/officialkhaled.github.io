@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>FlavorVerse</title>
 
-    <!-- styling for navbar -->
+    <!-- Styling for Navbar -->
     <style>
       :root {
         --main: #0c356a;
@@ -112,19 +113,17 @@
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="navbar-brand">
-        <img src="assets/img/logo/logo-1.png" alt="" width="80px" />
+        <img src="../assets/img/logo/logo-1.png" alt="" width="80px" />
       </div>
 
       <div class="navbar-list">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="../views/recipes.html">Recipes</a></li>
-          <li><a href="../views/aboutUs.html">About Us</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
           <li>
             <button>
-              <a style="color: #fff" href="../views/login.html"
-                >Login / Register</a
-              >
+              <a style="color: #fff" href="login.html">Login / Register</a>
             </button>
           </li>
         </ul>
@@ -134,7 +133,10 @@
     <!-- BODY -->
     <div>
       <div class="hero-section">
-        <h3 class="container hero-head">Culinary Adventures Begin Here</h3>
+        <h3 class="container hero-head">
+          Spice up your cooking,
+          <span class="auto-type">effortlessly</span>
+        </h3>
         <p class="container hero-slogan">
           Explore, Savor the Flavor, Share the Love!
         </p>
@@ -154,12 +156,12 @@
             <div>
               <article class="hidden motion slide-1">
                 <img
-                  src="assets/img/starters/starters-3.jpg"
+                  src="../assets/img/starters/starters-3.jpg"
                   alt=""
                   width="400px"
                 />
                 <h4 class="card-title">
-                  <a href="../views/recipes.html">Starter</a>
+                  <a href="recipes.html">Starter</a>
                 </h4>
                 <p class="card-text">Flavors that Spark the Feast!</p>
               </article>
@@ -167,9 +169,9 @@
 
             <div>
               <article class="hidden motion slide-2">
-                <img src="assets/img/maincourse/maincourse-3.jpg" alt="" />
+                <img src="../assets/img/maincourse/maincourse-3.jpg" alt="" />
                 <h4 class="card-title">
-                  <a href="../views/maincourse.html">Main Course</a>
+                  <a href="maincourse.html">Main Course</a>
                 </h4>
                 <p class="card-text">Savor the Heart of Every Bite.</p>
               </article>
@@ -177,9 +179,9 @@
 
             <div>
               <article class="hidden motion slide-3">
-                <img src="assets/img/desserts/dessert-3.jpg" alt="" />
+                <img src="../assets/img/desserts/dessert-3.jpg" alt="" />
                 <h4 class="card-title">
-                  <a href="../views/dessert.html">Dessert</a>
+                  <a href="dessert.html">Dessert</a>
                 </h4>
                 <p class="card-text">Indulge Your Sweet Desires.</p>
               </article>
@@ -192,7 +194,7 @@
           <div class="container-fluid mid-section">
             <div class="mid-img">
               <img
-                src="assets/img/hero-section-2.jpg"
+                src="../assets/img/hero-section-2.jpg"
                 alt=""
                 width="62%"
                 style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)"
@@ -213,12 +215,12 @@
             <div>
               <article class="hidden motion slide-1">
                 <img
-                  src="assets/img/noodles/noodles-2.jpg"
+                  src="../assets/img/noodles/noodles-2.jpg"
                   alt=""
                   width="400px"
                 />
                 <h4 class="card-title">
-                  <a href="../views/noodles.html">Noodles</a>
+                  <a href="noodles.html">Noodles</a>
                 </h4>
                 <p class="card-text">Noodle Nirvana: Twirl and Taste.</p>
               </article>
@@ -226,9 +228,9 @@
 
             <div>
               <article class="hidden motion slide-2">
-                <img src="assets/img/pizza/pizza-1.jpg" alt="" />
+                <img src="../assets/img/pizza/pizza-1.jpg" alt="" />
                 <h4 class="card-title">
-                  <a href="../views/pizza.html">Pizza</a>
+                  <a href="pizza.html">Pizza</a>
                 </h4>
                 <p class="card-text">Pizza Pleasures, Slice by Slice.</p>
               </article>
@@ -236,9 +238,9 @@
 
             <div>
               <article class="hidden motion slide-3">
-                <img src="assets/img/cake/cake-1.jpg" alt="" />
+                <img src="../assets/img/cake/cake-1.jpg" alt="" />
                 <h4 class="card-title">
-                  <a href="../views/cake.html">Cake</a>
+                  <a href="cake.html">Cake</a>
                 </h4>
                 <p class="card-text">Cake Bliss: Slice, Smile, Repeat!</p>
               </article>
@@ -257,7 +259,17 @@
       </footer>
     </div>
 
-    <script defer src="assets/js/scroll.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script defer src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["effortlessly", "seamlessly", "gracefully"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
