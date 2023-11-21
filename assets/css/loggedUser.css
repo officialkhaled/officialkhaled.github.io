@@ -199,7 +199,9 @@ header .image-text .profession {
   left: 250px;
   height: 100vh;
   width: calc(100% - 250px);
-  background: linear-gradient(180deg, #ffead9 5%, #ffd4b1 35%, #ffbf8b 100%);
+  /* background: linear-gradient(180deg, #ffead9 5%, #ffd4b1 35%, #ffbf8b 100%); */
+  background-color: #fdf8ee;
+
   transition: var(--tran-05);
 }
 
