@@ -25,52 +25,53 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
+            {/* Mobile Screen */}
             <li>
               <a href="#">About</a>
             </li>
             <li>
-              <a>Parent</a>
+              <a>Contact</a>
+            </li>
+            <li>
+              <a>Projects</a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Project 1</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Project 2</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <a>Item 3</a>
-            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Khaled Hossain</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Contact</a>
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
+              <summary>Projects</summary>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Project 1</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Project 2</a>
                 </li>
               </ul>
             </details>
           </li>
-          <li>
-            <a>Item 3</a>
-          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn">Resume/CV</a>
       </div>
     </div>
   );
