@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="py-24 px-10 flex items-center justify-center gap-10">
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="py-24 px-24 flex items-center justify-center gap-10">
+      <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -18,7 +18,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+
+      <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -33,7 +34,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+
+      <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
