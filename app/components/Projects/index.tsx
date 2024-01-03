@@ -2,7 +2,9 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="py-24 mx-auto max-w-screen-2xl flex items-center justify-center gap-20 ">
+    <div className="py-24 mx-auto max-w-screen-xl flex items-center justify-center gap-20 flex-wrap">
+      {" "}
+      {/* Fix Responsiveness */}
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
@@ -23,7 +25,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
@@ -44,7 +45,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
