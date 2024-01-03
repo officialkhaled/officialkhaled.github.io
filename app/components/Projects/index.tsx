@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="py-24 mx-auto max-w-screen-2xl flex items-center justify-center gap-10">
+    <div className="py-24 mx-auto max-w-screen-2xl flex items-center justify-center gap-20 ">
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
           <img
@@ -10,11 +10,16 @@ const Projects = () => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">FlavorVerse</h2>
-          <p>Front-end Project: Recipe platform (static)</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Visit Website</button>
+        <div className="card-body glasss">
+          <h2 className="text-xl font-bold  text-center">KothinTrain</h2>
+          <p className="text-center">Train Ticket Management System</p>
+          <div className="card-actions py-3 justify-center gap-5">
+            <button className="btn btn-primary w-36 hover:btn-secondary">
+              Code
+            </button>
+            <button className="btn btn-primary  w-36 hover:btn-secondary">
+              Live
+            </button>
           </div>
         </div>
       </div>
@@ -26,11 +31,16 @@ const Projects = () => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+        <div className="card-body glasss">
+          <h2 className="text-xl font-bold  text-center">KothinTrain</h2>
+          <p className="text-center">Train Ticket Management System</p>
+          <div className="card-actions py-3 justify-center gap-5">
+            <button className="btn btn-primary w-36 hover:btn-secondary">
+              Code
+            </button>
+            <button className="btn btn-primary  w-36 hover:btn-secondary">
+              Live
+            </button>
           </div>
         </div>
       </div>
@@ -42,11 +52,18 @@ const Projects = () => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+        <div className="card-body glasss">
+          <h2 className="text-xl font-bold  text-center">AIUBReD</h2>
+          <p className="text-center">
+            AIUB ReD Club&apos;s Official Website (Under Development)
+          </p>
+          <div className="card-actions py-3 justify-center gap-5">
+            <button className="btn btn-primary w-36 hover:btn-secondary">
+              Code
+            </button>
+            <button className="btn btn-primary  w-36 hover:btn-secondary">
+              Live
+            </button>
           </div>
         </div>
       </div>

@@ -1,12 +1,14 @@
 import React from "react";
+import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
     <div className="hero min-h-screen bg-base-200 ">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero-content min-h-screen flex-col lg:flex-row-reverse">
         <img
           src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-          className="max-w-sm rounded-lg shadow-2xl"
+          alt="image"
+          className="max-w-md rounded-lg shadow-2xl"
         />
         <div className="px-36">
           <h1 className="text-5xl font-bold">Hello World!</h1>
@@ -14,7 +16,9 @@ const Hero = () => {
             This is Khaled Hossain, a software engineer looking for internship
             opportunities.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary hover:btn-neutral">
+            Let&apos;s Go <FaPlay />
+          </button>
         </div>
       </div>
     </div>

@@ -31,17 +31,17 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a>Contact</a>
+              <a href="#">Contact</a>
             </li>
 
             <li>
               <a>Projects</a>
               <ul className="p-2">
                 <li>
-                  <a>Project 1</a>
+                  <a href="#">Project 1</a>
                 </li>
                 <li>
-                  <a>Project 2</a>
+                  <a href="#">Project 2</a>
                 </li>
               </ul>
             </li>
@@ -53,10 +53,10 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li className="text-base">
-            <a>About</a>
+            <a href="#">About</a>
           </li>
           <li className="text-base">
-            <a>Contact</a>
+            <a href="#">Contact</a>
           </li>
 
           <li>
@@ -64,10 +64,10 @@ const Navbar = () => {
               <summary className="text-base">Projects</summary>
               <ul className="p-2">
                 <li>
-                  <a>Project 1</a>
+                  <a href="#">Project 1</a>
                 </li>
                 <li>
-                  <a>Project 2</a>
+                  <a href="#">Project 2</a>
                 </li>
               </ul>
             </details>
@@ -75,6 +75,7 @@ const Navbar = () => {
         </ul>
       </div>
 
+      {/* Theme Switch */}
       <div className="navbar-end">
         <label className="swap swap-rotate py-2 px-5">
           {/* this hidden checkbox controls the state */}
