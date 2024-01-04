@@ -21,19 +21,20 @@ const Projects = () => {
           <h2 className="text-xl font-bold  text-center">FlavorVerse</h2>
           <p className="text-center">Online Platform of Curated Recipes</p>
           <div className="card-actions py-3 justify-center gap-5">
-            <button className="btn btn-primary w-36 hover:btn-secondary">
-              <a
-                href="https://github.com/officialkhaled/flavorverse-webapp"
-                target="_blank"
-              >
+            <a
+              href="https://github.com/officialkhaled/flavorverse-webapp"
+              target="_blank"
+            >
+              {" "}
+              <button className="btn btn-primary w-36 hover:btn-secondary">
                 Code
-              </a>
-            </button>
-            <button className="btn btn-primary  w-36 hover:btn-secondary">
-              <a href="https://flavorverse-webapp.vercel.app" target="_blank">
+              </button>
+            </a>
+            <a href="https://flavorverse-webapp.vercel.app" target="_blank">
+              <button className="btn btn-primary  w-36 hover:btn-secondary">
                 Live
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </div>
