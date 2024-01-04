@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* Mobile Screen */}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Khaled Hossain</a>
+        <a className="btn btn-ghost text-xl font-obviously">KHALED HOSSAIN</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -79,7 +79,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <label className="swap swap-rotate py-2 px-5">
           {/* this hidden checkbox controls the state */}
-          <input type="checkbox" className="theme-controller" value="light" />
+          <input type="checkbox" className="theme-controller" value="winter" />
 
           {/* sun icon */}
           <svg
@@ -92,14 +92,31 @@ const Navbar = () => {
 
           {/* moon icon */}
           <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            className="swap-off fill-current w-6 h-6"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11.998 2c5.517 0 9.997 4.48 9.997 9.998 0 5.517-4.48 9.997-9.997 9.997-5.518 0-9.998-4.48-9.998-9.997 0-5.518 4.48-9.998 9.998-9.998zm0 1.5c-4.69 0-8.498 3.808-8.498 8.498s3.808 8.497 8.498 8.497z"
+              fill-rule="nonzero"
+            />
+          </svg>
+          {/* <svg
             className="swap-off fill-current w-6 h-6"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
             <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-          </svg>
+          </svg> */}
         </label>
-        <a className="btn" href="">
+        <a
+          className="btn btn-accent text-white hover:btn-secondary hover:text-white"
+          href="#"
+        >
           Resume/CV
         </a>
       </div>
