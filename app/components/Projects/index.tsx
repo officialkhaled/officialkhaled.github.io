@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Project_1 from "../../../public/flavorverse.png";
+import Project_2 from "../../../public/kothintrain.png";
+import Project_3 from "../../../public/flavorverse.png";
 
 const Projects = () => {
   return (
@@ -39,21 +41,31 @@ const Projects = () => {
       </div>
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
+          <Image
+            src={Project_2}
+            alt="Project"
+            width={900}
+            height={100}
+            className=""
           />
         </figure>
         <div className="card-body glasss">
           <h2 className="text-xl font-bold  text-center">KothinTrain</h2>
           <p className="text-center">Train Ticket Management System</p>
           <div className="card-actions py-3 justify-center gap-5">
-            <button className="btn btn-primary w-36 hover:btn-secondary">
-              Code
-            </button>
-            <button className="btn btn-primary  w-36 hover:btn-secondary">
-              Live
-            </button>
+            <a
+              href="https://github.com/officialkhaled/KothinTrain-Webtech-Project-2022"
+              target="_blank"
+            >
+              <button className="btn btn-primary w-36 hover:btn-secondary">
+                Code
+              </button>
+            </a>
+            {/* <a href="https://flavorverse-webapp.vercel.app" target="_blank">
+              <button className="btn btn-primary  w-36 hover:btn-secondary">
+                Live
+              </button>
+            </a> */}
           </div>
         </div>
       </div>
