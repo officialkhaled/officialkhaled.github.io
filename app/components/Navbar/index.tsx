@@ -29,6 +29,10 @@ const Navbar = () => {
           >
             {/* Mobile Screen */}
             <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
               <a href="#">About</a>
             </li>
 
@@ -45,12 +49,15 @@ const Navbar = () => {
                 <li>
                   <a href="#">Project 2</a>
                 </li>
+                <li>
+                  <a href="#">Project 3</a>
+                </li>
               </ul>
             </li>
             {/* Mobile Screen */}
           </ul>
         </div>
-        <a href="#" className="m-0 p-0">
+        <a href="/" className="m-0 p-0">
           <Image src={logo} alt="logo" width={60} height={60} />
         </a>
         {/* <a href="#" className="text-xl font-Obviously text-center">
@@ -59,6 +66,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
+          <li className="text-base">
+            <a href="/">Home</a>
+          </li>
           <li className="text-base">
             <a href="#">About</a>
           </li>
@@ -75,6 +85,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#">Project 2</a>
+                </li>
+                <li>
+                  <a href="#">Project 3</a>
                 </li>
               </ul>
             </details>

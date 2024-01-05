@@ -17,7 +17,7 @@ const Footer = () => {
         </svg>
         <p className="font-bold pt-4">
           Developed by Khaled Hossain <br />
-          Thank you for visiting
+          khaledhossain.dev@hotmail.com
         </p>
         <p>Copyright © 2024 - All right reserved</p>
       </aside>
