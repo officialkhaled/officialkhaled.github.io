@@ -5,17 +5,17 @@ import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="py-60 hero min-h-3.5 bg-base-200 ">
-      <div className="hero-content justify-between flex-col lg:flex-row-reverse">
+    <div className="py-60 mx-auto min-h-3.5 bg-base-200 ">
+      <div className="hero-content mx-auto max-w-screen-xl justify-between flex-col lg:flex-row-reverse">
         <Image
           src={Profile}
           alt="Profile_Image"
           width={280}
           height={280}
-          className="rounded-full"
+          className="rounded-3xl"
         />
 
-        <div className="px-20">
+        <div className="">
           <h1 className="text-5xl font-bold font-Obviously">Hello, World!</h1>
           <p className="py-6 text-lg">
             This is

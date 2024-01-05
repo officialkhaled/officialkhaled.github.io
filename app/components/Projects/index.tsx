@@ -4,10 +4,10 @@ import Project_1 from "../../../public/flavorverse.png";
 
 const Projects = () => {
   return (
-    <div className="py-24 mx-auto max-w-screen-xl flex items-center justify-center gap-20 flex-wrap">
+    <div className="py-24 mx-auto max-w-screen-xl flex items-center justify-center gap-20 flex-wrap shrink-4 ">
       {" "}
       {/* Fix Responsiveness */}
-      <div className="card card-compact w-auto bg-base-100 shadow-xl">
+      <div className="card card-compact mx-auto max-w-screen-xl bg-base-100 shadow-xl">
         <figure>
           <Image
             src={Project_1}

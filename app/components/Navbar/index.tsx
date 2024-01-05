@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import logo from "../../../public/logo-1.png";
 
 const Navbar = () => {
   return (
@@ -48,7 +50,12 @@ const Navbar = () => {
             {/* Mobile Screen */}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl font-Obviously">KHALED HOSSAIN</a>
+        <a href="#" className="m-0 p-0">
+          <Image src={logo} alt="logo" width={60} height={60} />
+        </a>
+        {/* <a href="#" className="text-xl font-Obviously text-center">
+          KHALED
+        </a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -77,7 +84,7 @@ const Navbar = () => {
 
       {/* Theme Switch */}
       <div className="navbar-end">
-        <label className="swap swap-rotate py-2 px-5">
+        <label className="swap swap-rotate py-2 px-6">
           {/* this hidden checkbox controls the state */}
           <input type="checkbox" className="theme-controller" value="winter" />
 
@@ -107,7 +114,8 @@ const Navbar = () => {
         </label>
         <a
           className="btn btn-accent text-white hover:btn-secondary hover:text-white"
-          href="#"
+          href="/Resume_Khaled.pdf"
+          /* download={true} */
         >
           Resume/CV
         </a>
