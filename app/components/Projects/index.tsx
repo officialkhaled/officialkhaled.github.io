@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Project_1 from "../../../public/flavorverse.png";
 import Project_2 from "../../../public/kothintrain.png";
-import Project_3 from "../../../public/flavorverse.png";
+import Project_3 from "../../../public/aiubred.png";
 
 const Projects = () => {
   return (
@@ -71,9 +71,12 @@ const Projects = () => {
       </div>
       <div className="card card-compact w-auto bg-base-100 shadow-xl">
         <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
+          <Image
+            src={Project_3}
+            alt="Project"
+            width={900}
+            height={100}
+            className=""
           />
         </figure>
         <div className="card-body glasss">
@@ -82,12 +85,11 @@ const Projects = () => {
             AIUB ReD Club&apos;s Official Website (Under Development)
           </p>
           <div className="card-actions py-3 justify-center gap-5">
-            <button className="btn btn-primary w-36 hover:btn-secondary">
-              Code
-            </button>
-            <button className="btn btn-primary  w-36 hover:btn-secondary">
-              Live
-            </button>
+            <a href="https://aiub-red-main-website.vercel.app" target="_blank">
+              <button className="btn btn-primary w-36 hover:btn-secondary">
+                Live
+              </button>
+            </a>
           </div>
         </div>
       </div>
