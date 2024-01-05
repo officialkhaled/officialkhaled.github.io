@@ -25,7 +25,6 @@ const Projects = () => {
               href="https://github.com/officialkhaled/flavorverse-webapp"
               target="_blank"
             >
-              {" "}
               <button className="btn btn-primary w-36 hover:btn-secondary">
                 Code
               </button>

@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "obviously";
+  font-family: "ObviouslyWide-Medium";
   src: url(../public/ObviouslyWide-Medium.otf);
+}
+
+* {
+  background-color: linear-gradient(
+    180deg,
+    #00eaff 100%,
+    #4d3589 100%,
+    #badaff 100%,
+    #0025ce 100%
+  );
 }

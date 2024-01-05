@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        obviously: ["ObviouslyWide", "sans-serif"],
+        Obviously: ["ObviouslyWide-Medium", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

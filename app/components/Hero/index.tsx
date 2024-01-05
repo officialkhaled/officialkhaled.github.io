@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Profile from "../../../public/avatar.png";
+import Profile from "../../../public/avatar.jpg";
 import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
@@ -16,13 +16,17 @@ const Hero = () => {
         />
 
         <div className="px-20">
-          <h1 className="text-5xl font-bold">Hello World!</h1>
+          <h1 className="text-5xl font-bold font-Obviously">Hello, World!</h1>
           <p className="py-6 text-lg">
-            This is Khaled Hossain, a software engineer looking for internship
-            opportunities.
+            This is
+            <span className="font-semibold text-orange-600">
+              {" "}
+              Khaled Hossain
+            </span>
+            , a software engineer looking for internship opportunities.
           </p>
           <button className="btn btn-primary text-base text-white hover:btn-neutral">
-            Let&apos;s Go <FaPlay />
+            Portfolio <FaPlay />
           </button>
         </div>
       </div>
