@@ -1,6 +1,47 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
+import { url } from "inspector";
+
+const NavbarItems = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Contact",
+    url: "/contact",
+  },
+  {
+    title: "Projects",
+    url: "/projects",
+  },
+  {
+    title: "Socials",
+    extra: [
+      {
+        title: "LinkedIn",
+        url: "/",
+      },
+      {
+        title: "GitHub",
+        url: "/",
+      },
+      {
+        title: "Facebook",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "Contact Us",
+    url: "/contact",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -41,16 +82,32 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a>Projects</a>
+              <a href="#">Projects</a>
+            </li>
+
+            <li>
+              <a>Socials</a>
               <ul className="p-2">
                 <li>
-                  <a href="#">Project 1</a>
+                  <a
+                    href="https://www.linkedin.com/in/khaledhossain-devacc/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Project 2</a>
+                  <a href="https://github.com/officialkhaled" target="_blank">
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Project 3</a>
+                  <a
+                    href="https://www.facebook.com/khaledhossain.dev"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
                 </li>
               </ul>
             </li>
@@ -65,7 +122,7 @@ const Navbar = () => {
         </a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-2">
           <li className="text-base">
             <a href="/">Home</a>
           </li>
@@ -75,19 +132,34 @@ const Navbar = () => {
           <li className="text-base">
             <a href="#">Contact</a>
           </li>
+          <li className="text-base">
+            <a href="#">Projects</a>
+          </li>
 
           <li>
             <details>
-              <summary className="text-base">Projects</summary>
+              <summary className="text-base">Socials</summary>
               <ul className="p-2">
                 <li>
-                  <a href="#">Project 1</a>
+                  <a
+                    href="https://www.linkedin.com/in/khaledhossain-devacc/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Project 2</a>
+                  <a href="https://github.com/officialkhaled" target="_blank">
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Project 3</a>
+                  <a
+                    href="https://www.facebook.com/khaledhossain.dev"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
                 </li>
               </ul>
             </details>

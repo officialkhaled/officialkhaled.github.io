@@ -11,13 +11,7 @@ const Projects = () => {
       {/* Fix Responsiveness */}
       <div className="card card-compact mx-auto max-w-screen-xl bg-base-100 shadow-xl">
         <figure>
-          <Image
-            src={Project_1}
-            alt="Project"
-            width={900}
-            height={100}
-            className=""
-          />
+          <Image src={Project_1} alt="Project" width={900} height={100} />
         </figure>
         <div className="card-body glasss">
           <h2 className="text-xl font-bold  text-center">FlavorVerse</h2>

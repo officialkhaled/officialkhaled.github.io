@@ -12,18 +12,21 @@ const Hero = () => {
           alt="Profile_Image"
           width={280}
           height={280}
-          className="rounded-3xl"
+          className="shadow-lg shadow-gray-300 rounded-3xl"
         />
 
         <div className="">
           <h1 className="text-5xl font-bold font-Obviously">Hello, World!</h1>
-          <p className="py-6 text-lg">
+          <p className="my-8 text-lg text-justify mr-28">
             This is
             <span className="font-semibold text-orange-600">
               {" "}
               Khaled Hossain
             </span>
             , a software engineer looking for internship opportunities.
+            Proficient in JavaScript, HTML & CSS. Currently learning ReactJS,
+            TailwindCSS and TypeScript. I am a fast learner and a team player. I
+            am also a good communicator and a problem solver.
           </p>
           <button className="btn btn-primary text-base text-white hover:btn-neutral">
             Portfolio <FaPlay />
