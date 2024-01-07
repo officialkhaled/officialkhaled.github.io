@@ -6,17 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "ObviouslyWide-Medium";
   src: url(../public/ObviouslyWide-Medium.otf);
 }
 
 .grad-bg {
-  background-color: linear-gradient(
-    180deg,
-    #00eaff 100%,
-    #4d3589 100%,
-    #badaff 100%,
-    #0025ce 100%
-  );
+  background-color: linear-gradient(180deg, #00eaff, #4d3589, #badaff, #0025ce);
 }

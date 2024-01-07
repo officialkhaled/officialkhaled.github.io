@@ -1,0 +1,20 @@
+/* @media screen and (max-width: 1024px) {
+  .responsive {
+    margin-right: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .responsive {
+    margin: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {
+    margin: 0px 50px;
+    padding-right: 0px;
+  }
+}

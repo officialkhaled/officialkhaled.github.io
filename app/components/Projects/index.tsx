@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import "./projects.css";
 import Project_1 from "../../../public/flavorverse.png";
 import Project_2 from "../../../public/kothintrain.png";
 import Project_3 from "../../../public/aiubred.png";
 
 const Projects = () => {
   return (
-    <div className="py-24 mx-auto max-w-screen-xl flex items-center justify-center gap-20 flex-wrap shrink-4 ">
+    <div className="py-24 mx-auto max-w-screen-xl responsive flex items-center justify-center gap-20 flex-wrap shrink-4">
       {" "}
-      {/* Fix Responsiveness */}
       <div className="card card-compact mx-auto max-w-screen-xl bg-base-100 shadow-xl">
         <figure>
           <Image src={Project_1} alt="Project" width={900} height={100} />
         </figure>
-        <div className="card-body glasss">
+        <div className="card-body">
           <h2 className="text-xl font-bold  text-center">FlavorVerse</h2>
           <p className="text-center">Online Platform of Curated Recipes</p>
           <div className="card-actions py-3 justify-center gap-5">

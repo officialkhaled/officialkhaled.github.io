@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+  .responsive {
+    margin: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {
+    margin: 0px 50px;
+  }
+}

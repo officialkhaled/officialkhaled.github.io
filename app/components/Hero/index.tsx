@@ -5,8 +5,8 @@ import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="py-60 mx-auto min-h-3.5 bg-base-200 ">
-      <div className="hero-content mx-auto max-w-screen-xl justify-between flex-col lg:flex-row-reverse">
+    <div className="py-60 mx-auto min-h-3 bg-base-200">
+      <div className="hero-content mx-auto max-w-screen-xl justify-between flex-col responsive lg:flex-row-reverse">
         <Image
           src={Profile}
           alt="Profile_Image"
@@ -17,7 +17,7 @@ const Hero = () => {
 
         <div className="">
           <h1 className="text-5xl font-bold font-Obviously">Hello, World!</h1>
-          <p className="my-8 text-lg text-justify mr-28">
+          <p className="py-8 text-lg text-justify pr-28">
             This is
             <span className="font-semibold text-orange-600">
               {" "}
